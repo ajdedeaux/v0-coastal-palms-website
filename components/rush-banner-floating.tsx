@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X } from "lucide-react"
+import { X } from "@/components/icon-placeholder"
 
 export function RushBannerFloating() {
   const [isVisible, setIsVisible] = useState(false)

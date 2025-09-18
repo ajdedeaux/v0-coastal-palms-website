@@ -1,4 +1,4 @@
-import { Shield, Clock, Award } from "lucide-react"
+import { Shield, Clock, Award } from "@/components/icon-placeholder"
 
 export function TrustBadge() {
   return (

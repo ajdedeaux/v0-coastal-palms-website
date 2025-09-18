@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Home, Truck, Warehouse, ArrowRight } from "lucide-react"
+import { Home, Truck, Warehouse, ArrowRight } from "@/components/icon-placeholder"
 import { Button } from "@/components/ui/button"
 
 const services = [

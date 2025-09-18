@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X, Phone } from "@/components/icon-placeholder"
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)

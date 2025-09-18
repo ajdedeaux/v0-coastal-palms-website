@@ -1,6 +1,6 @@
 "use client"
 
-import { CheckCircle, Upload, Calendar, Truck, Home } from "lucide-react"
+import { CheckCircle, Upload, Calendar, Truck, Home } from "@/components/icon-placeholder"
 import { useEffect, useRef, useState } from "react"
 
 const steps = [

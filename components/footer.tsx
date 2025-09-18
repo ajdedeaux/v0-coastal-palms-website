@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, Instagram, Facebook, ExternalLink } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram, Facebook, ExternalLink } from "@/components/icon-placeholder"
 
 export function Footer() {
   return (

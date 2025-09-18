@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Truck, Home, Clock } from "lucide-react"
+import { ArrowRight, ShieldCheck, Building2, Zap } from "@/components/icon-placeholder"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -32,15 +32,15 @@ export function HeroSection() {
 
             <div className="hidden md:flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
               <div className="flex items-center gap-2">
-                <Truck className="h-5 w-5 text-primary" />
+                <ShieldCheck className="h-5 w-5 text-primary" />
                 <span className="text-sm font-medium">Licensed & Insured FL Logistics Provider</span>
               </div>
               <div className="flex items-center gap-2">
-                <Home className="h-5 w-5 text-primary" />
+                <Building2 className="h-5 w-5 text-primary" />
                 <span className="text-sm font-medium">500+ Model Homes Delivered</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-primary" />
+                <Zap className="h-5 w-5 text-primary" />
                 <span className="text-sm font-medium">Same-Day Rush Available</span>
               </div>
             </div>

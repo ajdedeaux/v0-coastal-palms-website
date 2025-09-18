@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Phone } from "lucide-react"
+import { PhoneCall } from "@/components/icon-placeholder"
 import { useState, useEffect } from "react"
 import { MobileMenu } from "@/components/mobile-menu"
 
@@ -54,7 +54,7 @@ export function Header() {
 
         <div className="flex items-center space-x-2 md:space-x-4">
           <div className="flex items-center space-x-2 text-xs md:text-sm">
-            <Phone className="h-3 w-3 md:h-4 md:w-4 text-primary" />
+            <PhoneCall className="h-3 w-3 md:h-4 md:w-4 text-primary animate-pulse" />
             <span className="font-medium">(813) 876-8314</span>
           </div>
           <Button className="hidden md:inline-flex">Get Quote</Button>

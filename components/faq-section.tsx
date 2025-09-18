@@ -1,5 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Shield, Clock, DollarSign, Truck } from "lucide-react"
+import { Shield, Clock, DollarSign, Truck } from "@/components/icon-placeholder"
 
 const faqs = [
   {

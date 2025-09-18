@@ -1,4 +1,4 @@
-import { MapPin, Clock, Shield } from "lucide-react"
+import { MapPin, Clock, Shield } from "@/components/icon-placeholder"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function CoverageSection() {
