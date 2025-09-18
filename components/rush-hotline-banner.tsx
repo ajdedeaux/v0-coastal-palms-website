@@ -8,14 +8,20 @@ export function RushHotlineBanner() {
         <div className="flex items-center justify-center gap-4 text-sm font-medium">
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4" />
-            <span>Need it today?</span>
+            <span>🚨 MODEL HOME EMERGENCY?</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
-            <span>Rush Hotline: (813) 555-RUSH</span>
+            <span>
+              Call our Rush Line:{" "}
+              <a href="tel:8138768314" className="underline hover:no-underline">
+                (813) 876-8314
+              </a>
+            </span>
           </div>
+          <span>→ Same-Day Service Available</span>
           <Button variant="secondary" size="sm" className="ml-2">
-            Call Now
+            <a href="tel:8138768314">Call Now</a>
           </Button>
         </div>
       </div>

@@ -79,7 +79,10 @@ export function CoverageSection() {
                 </CardHeader>
                 <CardContent className="text-sm space-y-2">
                   <div>
-                    <strong>Address:</strong> Central Tampa
+                    <strong>Address:</strong> 6914 Asphalt Ave, Suite A, Tampa, FL 33614
+                  </div>
+                  <div>
+                    <strong>Central location = Faster delivery = Lower costs</strong>
                   </div>
                   <div>
                     <strong>Climate Controlled</strong>

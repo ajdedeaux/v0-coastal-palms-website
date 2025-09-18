@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { RushHotlineBanner } from "@/components/rush-hotline-banner"
 import { HeroSection } from "@/components/hero-section"
+import { PartnersBar } from "@/components/partners-bar"
 import { ServicesSection } from "@/components/services-section"
 import { PortfolioGallery } from "@/components/portfolio-gallery"
 import { HowItWorksSection } from "@/components/how-it-works-section"
@@ -8,6 +9,9 @@ import { CoverageSection } from "@/components/coverage-section"
 import { FAQSection } from "@/components/faq-section"
 import { QuoteFormSection } from "@/components/quote-form-section"
 import { Footer } from "@/components/footer"
+import { TrustBadge } from "@/components/trust-badge"
+import { RushBannerFloating } from "@/components/rush-banner-floating"
+import { MobileRushBar } from "@/components/mobile-rush-bar"
 
 export default function HomePage() {
   return (
@@ -16,7 +20,9 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <PartnersBar />
         <ServicesSection />
+        <TrustBadge />
         <PortfolioGallery />
         <HowItWorksSection />
         <CoverageSection />
@@ -24,6 +30,8 @@ export default function HomePage() {
         <QuoteFormSection />
       </main>
       <Footer />
+      <RushBannerFloating />
+      <MobileRushBar />
     </div>
   )
 }
