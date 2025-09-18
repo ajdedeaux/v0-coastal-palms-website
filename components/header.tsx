@@ -6,13 +6,14 @@ import { Button } from "@/components/ui/button"
 import { PhoneCall } from "@/components/icon-placeholder"
 import { useState, useEffect } from "react"
 import { MobileMenu } from "@/components/mobile-menu"
+import { cn } from "@/lib/utils"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
+      setIsScrolled(window.scrollY > 8)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -21,9 +22,12 @@ export function Header() {
 
   return (
     <header
-      className={`bg-background border-b border-border sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "backdrop-blur-sm shadow-lg" : ""
-      }`}
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        isScrolled
+          ? "bg-white/90 backdrop-blur-md shadow-md border-b border-border/50"
+          : "bg-white/80 backdrop-blur-sm shadow-sm border-b border-border/30",
+      )}
     >
       <div className="container mx-auto px-4 md:px-4 py-3 md:py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-3">
@@ -55,7 +59,7 @@ export function Header() {
         <div className="flex items-center space-x-2 md:space-x-4">
           <div className="flex items-center space-x-2 text-xs md:text-sm">
             <PhoneCall className="h-3 w-3 md:h-4 md:w-4 text-primary animate-pulse" />
-            <span className="font-medium">(813) 876-8314</span>
+            <span className="font-medium text-foreground">(813) 876-8314</span>
           </div>
           <Button className="hidden md:inline-flex">Get Quote</Button>
           <MobileMenu />

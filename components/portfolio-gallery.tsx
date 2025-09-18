@@ -3,24 +3,24 @@ import Image from "next/image"
 
 const portfolioImages = [
   {
-    src: "/images/living-room-1.jpeg",
-    alt: "Luxury living room setup with sectional seating and entertainment center",
-    category: "Living Rooms",
+    src: "/images/gallery/kitchens/clean-kitchen.jpg",
+    alt: "Professionally staged kitchen ready for model home showing with premium appliances and styling",
+    category: "Kitchen",
   },
   {
-    src: "/images/dining-room.jpeg",
-    alt: "Elegant dining room with statement chandelier and accent wall",
-    category: "Dining Rooms",
+    src: "/images/gallery/bedrooms/clean-bedroom-1.jpg",
+    alt: "Luxury bedroom setup optimized for vacation rental bookings with hotel-quality presentation",
+    category: "Bedroom",
   },
   {
-    src: "/images/bedroom-2.jpeg",
-    alt: "Modern bedroom with textured accent wall and platform bed",
-    category: "Bedrooms",
+    src: "/images/gallery/bathrooms/clean-bathroom-1.jpg",
+    alt: "Spa-inspired bathroom staging that elevates property value and buyer appeal",
+    category: "Bathroom",
   },
   {
-    src: "/images/hallway-console.jpeg",
-    alt: "Stylish hallway console with botanical artwork",
-    category: "Entryways",
+    src: "/images/gallery/living-rooms/neutral-living-room.jpg",
+    alt: "Designer living room arrangement that showcases space potential and lifestyle appeal",
+    category: "Living Room",
   },
 ]
 
@@ -37,7 +37,7 @@ export function PortfolioGallery() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6 max-w-4xl mx-auto">
           {portfolioImages.map((image, index) => (
             <Card
               key={index}

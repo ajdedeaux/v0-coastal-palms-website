@@ -30,6 +30,7 @@ import {
   Minus,
   MoreHorizontal,
   Search,
+  ChevronLeft,
 } from "lucide-react"
 
 // Export all the icons directly from Lucide React
@@ -52,6 +53,8 @@ export {
   ChevronDown,
   ChevronDown as ChevronDownIcon, // Added missing ChevronDownIcon export
   ChevronUp as ChevronUpIcon,
+  ChevronLeft, // Added missing chevron exports for carousel navigation
+  ArrowRight as ChevronRight, // Fixed undeclared ChevronRight variable
   Check as CheckIcon,
   Instagram,
   Facebook,

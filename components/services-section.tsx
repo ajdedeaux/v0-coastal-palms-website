@@ -5,27 +5,27 @@ import { Button } from "@/components/ui/button"
 const services = [
   {
     icon: Home,
-    title: "Model Home Excellence",
+    title: "Builder-Grade Model Home Setup",
     description:
-      "We're the exclusive delivery partner for Tampa Bay's leading homebuilders. From Pulte to DR Horton, we handle complete model home installations with military precision. Every piece positioned perfectly, every deadline met.",
+      "Transform empty model homes into sales-driving showcases. We partner exclusively with Tampa Bay's top builders, delivering complete installations that help sell homes faster and at premium prices.",
     features: ["Full room staging", "Furniture assembly", "Decor placement", "Photo-ready setup"],
     image: "/images/model-home-delivery.jpeg",
   },
   {
     icon: Truck,
-    title: "Vacation Rental Magic",
+    title: "Airbnb & Rental Staging",
     description:
-      "Transform empty properties into 5-star vacation rentals. We receive, store, and install everything from Wayfair orders to custom furnishings—getting you rental-ready in days, not weeks.",
+      "Turn vacant properties into 5-star rental experiences that command premium rates. From Wayfair deliveries to custom furnishings, we get your property booking-ready in days.",
     features: ["Same-day available", "White-glove handling", "Real-time tracking", "Flexible scheduling"],
     image: "/images/master-bedroom.jpeg",
   },
   {
     icon: Warehouse,
-    title: "Residential White-Glove",
+    title: "Premium Residential Delivery",
     description:
-      "Your furniture deserves better than curbside delivery. We handle high-value residential installations with the care and expertise your investment demands.",
+      "Your luxury furniture deserves expert care from warehouse to final placement. We protect your investment with climate-controlled storage and precision installation.",
     features: ["Climate controlled", "Inventory management", "Quality inspection", "Flexible storage terms"],
-    image: "/images/warehouse-operation.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2760.JPG-G4x3XUM4UWf06KuGFAJQl1KPVpWyZm.jpeg",
   },
 ]
 

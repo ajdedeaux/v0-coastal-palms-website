@@ -1,5 +1,6 @@
 import { MapPin, Clock, Shield } from "@/components/icon-placeholder"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export function CoverageSection() {
   return (
@@ -14,7 +15,7 @@ export function CoverageSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
@@ -96,16 +97,41 @@ export function CoverageSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square bg-muted rounded-lg overflow-hidden">
-              <img
-                src="/tampa-bay-area-map-showing-delivery-coverage-zones.jpg"
-                alt="Tampa Bay delivery coverage map"
-                className="w-full h-full object-cover"
-              />
+            <div className="rounded-xl overflow-hidden shadow-lg w-full h-[380px] md:h-[500px]">
+              {process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ? (
+                <iframe
+                  src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}&q=6914+Asphalt+Ave+Suite+A+Tampa+FL+33614&center=27.9506,-82.4572&zoom=10&maptype=roadmap`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Coastal Palms Warehouse Location and Tampa Bay Coverage Area"
+                  className="w-full h-full"
+                />
+              ) : (
+                <div className="relative w-full h-full bg-muted">
+                  <Image
+                    src="/images/coverage-map.png"
+                    alt="Tampa Bay delivery coverage map showing service areas and delivery zones"
+                    fill
+                    className="object-cover"
+                    priority={false}
+                  />
+                </div>
+              )}
             </div>
-            <div className="absolute top-4 right-4 bg-primary text-primary-foreground p-3 rounded-lg shadow-lg">
-              <div className="text-lg font-bold">50+ Miles</div>
-              <div className="text-xs">Coverage Radius</div>
+            <div className="absolute top-4 right-4 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground p-4 rounded-xl shadow-xl border border-primary/20">
+              <div className="text-xl font-bold">50+ Miles</div>
+              <div className="text-xs opacity-90">Coverage Radius</div>
+            </div>
+            <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-lg shadow-lg border">
+              <div className="flex items-center gap-2 text-sm">
+                <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                <span className="font-medium text-gray-800">Warehouse Location</span>
+              </div>
+              <div className="text-xs text-gray-600 mt-1">6914 Asphalt Ave, Tampa</div>
             </div>
           </div>
         </div>

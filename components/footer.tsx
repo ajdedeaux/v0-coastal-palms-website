@@ -1,6 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, Instagram, Facebook, ExternalLink } from "@/components/icon-placeholder"
+import Image from "next/image"
+import { Phone, Mail, MapPin, Instagram, Facebook } from "@/components/icon-placeholder"
 
 export function Footer() {
   return (
@@ -8,13 +8,17 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
           <div className="space-y-4 text-center md:text-left">
-            <Image
-              src="/images/coastal-palms-logo-transparent.png"
-              alt="Coastal Palms Delivery"
-              width={300}
-              height={150}
-              className="h-16 md:h-20 w-auto mx-auto md:mx-0"
-            />
+            <div className="flex justify-center md:justify-start">
+              <div className="bg-white rounded-lg p-4 shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CoastalPalmsLogoTransperent1200x600-2T1qbfAc0UwTLNX9Pm8kjynPQ2rhrj.png"
+                  alt="Coastal Palms Delivery Logo"
+                  width={240}
+                  height={120}
+                  className="h-auto"
+                />
+              </div>
+            </div>
             <p className="text-sm text-background/80 leading-relaxed">
               Professional white-glove delivery and installation services for Tampa Bay. Trusted by model homes, Airbnb
               hosts, and discerning homeowners.
@@ -39,7 +43,7 @@ export function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.google.com/maps/place/Coastal+Palms+Delivery/@28.0131631,-82.5236958,17z"
+                href="https://www.google.com/maps/place/Coastal+Palms+Delivery/@28.0131667,-82.5265566,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c123a296c059:0x46dc191dfd319296!8m2!3d28.0131667!4d-82.5239817!16s%2Fg%2F11yh3gfc3h?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 p-3 rounded-full hover:bg-primary transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
@@ -130,7 +134,7 @@ export function Footer() {
                 <span className="text-background/80 text-base md:text-sm">
                   <a
                     href="mailto:info@coastalpalmsdelivery.com"
-                    className="hover:text-primary transition-colors py-2 block"
+                    className="hover:text-primary transition-colors block py-2"
                   >
                     info@coastalpalmsdelivery.com
                   </a>
@@ -140,16 +144,15 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                 <div className="text-background/80 text-base md:text-sm">
                   <a
-                    href="https://www.google.com/maps/place/Coastal+Palms+Delivery/@28.0131631,-82.5236958,17z"
+                    href="https://www.google.com/maps/place/Coastal+Palms+Delivery/@28.0131667,-82.5265566,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2c123a296c059:0x46dc191dfd319296!8m2!3d28.0131667!4d-82.5239817!16s%2Fg%2F11yh3gfc3h?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors flex items-start gap-1 py-2"
+                    className="hover:text-primary transition-colors block py-2"
                   >
                     <span>
                       6914 Asphalt Ave Suite A<br />
                       Tampa, FL 33614
                     </span>
-                    <ExternalLink className="h-3 w-3 mt-0.5 flex-shrink-0" />
                   </a>
                 </div>
               </div>
