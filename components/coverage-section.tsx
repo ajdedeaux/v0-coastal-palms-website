@@ -98,29 +98,15 @@ export function CoverageSection() {
 
           <div className="relative">
             <div className="rounded-xl overflow-hidden shadow-lg w-full h-[380px] md:h-[500px]">
-              {process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ? (
-                <iframe
-                  src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}&q=6914+Asphalt+Ave+Suite+A+Tampa+FL+33614&center=27.9506,-82.4572&zoom=10&maptype=roadmap`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Coastal Palms Warehouse Location and Tampa Bay Coverage Area"
-                  className="w-full h-full"
+              <div className="relative w-full h-full bg-muted">
+                <Image
+                  src="/images/coverage-map.png"
+                  alt="Tampa Bay delivery coverage map showing service areas and delivery zones"
+                  fill
+                  className="object-cover"
+                  priority={false}
                 />
-              ) : (
-                <div className="relative w-full h-full bg-muted">
-                  <Image
-                    src="/images/coverage-map.png"
-                    alt="Tampa Bay delivery coverage map showing service areas and delivery zones"
-                    fill
-                    className="object-cover"
-                    priority={false}
-                  />
-                </div>
-              )}
+              </div>
             </div>
             <div className="absolute top-4 right-4 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground p-4 rounded-xl shadow-xl border border-primary/20">
               <div className="text-xl font-bold">50+ Miles</div>
